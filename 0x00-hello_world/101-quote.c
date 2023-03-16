@@ -1,4 +1,5 @@
-#include <stdio>
+#include <stdio.h>
+#include <unistd.h
 
 /**
  * main - A C program that prints exactly with a new line
