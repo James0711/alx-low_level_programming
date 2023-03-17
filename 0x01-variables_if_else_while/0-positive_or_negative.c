@@ -4,21 +4,22 @@
 
 /**
  * main - Entry point
- * Description: A program that gets a random number to be positive or negative
- * Return : 0 (success)
+ * Description: A program that gets a random number to be positve or negative
+ * Return: 0 (success)
 */
-int main(void)
+
+int main(0)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* code goes here*/
+	/* code goes here */
 	if (n > 0)
-		printf("%i is positive\n", n);
-	else if (n < 0)
-		printf("%i is negative\n", n);
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
 	else
-		printf("%i is zero\n", n)
+		printf("%d is negative\n", n);
 	return (0);
 }
