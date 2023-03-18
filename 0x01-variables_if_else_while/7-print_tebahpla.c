@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main - Entry point
+ * main - Entry point
  * Description: A program that prints alphabet in reverse
  * followed by a new line.
  * Return: Always 0
