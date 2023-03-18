@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main - Entry Point
+ * main - Entry Point
  * A program that prints all
  * possible combination of
  * single-digit numbers
