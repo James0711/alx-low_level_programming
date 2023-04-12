@@ -9,22 +9,22 @@
 
 int count_word(char *s)
 {
-	int c, w, flag;
+	int a, b, flag;
 
-	c = 0;
+	b = 0;
 	flag = 0;
 
-	for (c = 0; s[c] != '\0'; c++)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		if (s[c - 1] == ' ')
+		if (s[a] == ' ')
 			flag = 0;
 		else if (flag == 0)
 		{
 			flag = 1;
-			w++;
+			b++;
 		}
 	}
-	return (w);
+	return (b);
 }
 
 /**
@@ -51,12 +51,12 @@ char **strtow(char *str)
 
 	for (i = 0; i <= len; i++)
 	{
-		if (str[i] == ' ' || str[i - 1] == '\0')
+		if (str[i] == ' ' || str[i] == '\0')
 		{
 			if (c)
 			{
 				end = i;
-				tmp = (char *) malloc((c = 1) * sizeof(char));
+				tmp = (char *) malloc((c + 1) * sizeof(char));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
