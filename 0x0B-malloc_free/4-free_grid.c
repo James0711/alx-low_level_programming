@@ -8,8 +8,8 @@
  *
  * @grid: 2 Dimensional grid
  * @height: height of grid
- *
- * Return: NULL
+ * Description: frees grid memory
+ * Return: nothing
  */
 
 void free_grid(int **grid, int height)
