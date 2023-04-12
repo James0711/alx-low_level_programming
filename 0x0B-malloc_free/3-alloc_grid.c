@@ -13,12 +13,10 @@ int **alloc_grid(int width, int height)
 	int i, j;
 	int **bee;
 
-	if (width <= 0)
-		return (NULL);
-	if (height <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	bee = malloc(height * sizeof(int));
+	bee = malloc(height * sizeof(int *));
 
 	if (bee == NULL)
 		return (NULL);
