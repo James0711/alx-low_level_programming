@@ -7,7 +7,7 @@
  * in memory which contains a copy of the string given
  *
  * @str: string
- * Return: 0
+ * Return: A pointer or NULL
  */
 
 char *_strdup(char *str)
