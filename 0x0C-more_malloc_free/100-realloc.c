@@ -8,7 +8,7 @@
  *  @old_size: old size of the allocated memory
  *  @new_size: new size of the allocated memory
  *
- *  Return: pointer to the newly allocated memory block or NULL
+ *  Return: pointer or NULL
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -37,7 +37,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (new_size < old_size)
 	{
-		for  (r = 0; r < new_size; r++)
+		for (r = 0; r < new_size; r++)
 			ptr1[r] = old_ptr[r];
 	}
 	if (new_size > old_size)
