@@ -7,7 +7,7 @@
 /**
  * is_digit - A function that checks if a string contains a non-digit char
  * @s: string
- * Return: 0 if non-digit otherwise 1
+ * Return: 0 if a non-digit is found otherwise 1
  */
 
 int is_digit(char *s)
@@ -26,7 +26,7 @@ int is_digit(char *s)
 /**
  * _strlen - A function that returns the length of a string
  * @s: string
- * Return: length
+ * Return: length of the string
  */
 
 int _strlen(char *s)
@@ -51,9 +51,9 @@ void errors(void)
 }
 
 /**
- * main - A function that multiplies two positive integers
- * @argc: number of argument
- * @argv: array of argument
+ * main - A function that multiplies two positive numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
  * Return: 0 (success)
  */
 
