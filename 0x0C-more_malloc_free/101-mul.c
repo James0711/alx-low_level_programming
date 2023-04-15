@@ -57,11 +57,10 @@ void errors(void)
  * Return: 0 (success)
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int len, len1, len2, digit1, digit2, a, carry;
+	int len, len1, len2, *result, r = 0, digit1, digit2, a, carry;
 	char *s1, *s2;
-	int *result, r = 0;
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
