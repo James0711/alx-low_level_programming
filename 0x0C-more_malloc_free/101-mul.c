@@ -52,11 +52,9 @@ void errors(void)
 
 /**
  * main - A function that multiplies two positive integers
- *
  * @argc: number of argument
  * @argv: array of argument
- *
- * Return: 0 (success) 
+ * Return: 0 (success)
  */
 
 int main(int argc, char **argv)
@@ -65,8 +63,7 @@ int main(int argc, char **argv)
 	char *s1, *s2;
 	int *result, r = 0;
 
-	s1 = argv[1];
-	s2 = argv[2];
+	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
 		errors();
 	len1 = _strlen(s1);
